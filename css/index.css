@@ -55,5 +55,5 @@ footer .footerWrap strong   {font-size: 24px; color: #fff; padding-bottom: 20px;
 footer .footerWrap .contact     {display: block; padding-top: 20px;}
 footer .footerWrap .contact span {font-size: 16px; color: #fff; display: block; font-weight: normal; line-height: 22px; padding-left: 25px;}
 footer .footerWrap .contact span:nth-child(1)    {background: url(../img/mail.png) 0 5px no-repeat;}
-footer .footerWrap .contact span:nth-child(2)    {background: url(../img/phone.png) 0  no-repeat;}    
+footer .footerWrap .contact span:nth-child(2)    {background: url(../img/phone.png) 0  no-repeat; display: none;}    
 footer .footerWrap .contact span:nth-child(3)    {background: url(../img/talk.png) 0 7px no-repeat;}   
