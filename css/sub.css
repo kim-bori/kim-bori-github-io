@@ -1,3 +1,5 @@
-.about		{width: 100%; margin-top: 40px;}
+.about		{width: 100%; margin-top: 50px;}
 .about span {display: inline-block; width: 500px;}
 .about span:nth-child(2) {margin-left: 65px;}
+
+.number     {display: inline-block; margin: 50px 150px 0 0; float: left;}
