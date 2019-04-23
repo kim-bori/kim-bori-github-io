@@ -116,13 +116,19 @@
                             </ul>
                         </div>
                         <script>
-                            $('.btDropdown').on('click', function(){
+                            /*$('.btDropdown').on('click', function(){
                                 if($(this).children('ul').hasClass('show')){
                                     $(this).find('ul').removeClass('show');
                                     $(this).find('.trigger').removeClass('open');                                       
                                 } else{
                                     $(this).find('ul').addClass('show'); 
 								};
+                            });*/
+                            $('.btDropdown').on('mouseover', function(){
+                                $(this).find('ul').slideDown();
+                            });
+                             $('.btDropdown').on('mouseleave', function(){
+                                $(this).find('ul').slideUp();
                             });
                         </script>                          
 					</div>
