@@ -27,7 +27,7 @@
 .view .slick-list	{width: 100%; overflow: hidden; }
 .view .slick-slide	{float: left; }
 .view .slick-slide img 	{ width:100%; }
-.view .slick-arrow	{width: 20px; height: 36px; position: absolute; top: 165px; overflow: hidden; text-indent: -100px; border-style: none; z-index: 8;}
+.view .slick-arrow	{width: 20px; height: 36px; position: absolute; top: 165px; overflow: hidden; text-indent: -100px; border-style: none; z-index: 8; outline: none; cursor: pointer;}
 .view .slick-prev	{background: url(../img/pre.png) 0 0 no-repeat; left: 25px;}
 .view .slick-next	{background: url(../img/next.png) 0 0 no-repeat; left: 490px;}
 
