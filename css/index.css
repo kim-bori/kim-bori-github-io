@@ -46,8 +46,7 @@
 .pjButton       {}
 .btDropdown    {position: relative; display: inline-block;}
 .trigger        {text-align: center; background: #005c13; color: #fff; text-decoration: none; padding: 5px 15px; min-width: 85px; display: inline-block;}
-.hideDropdown      {background: #fff; min-width: 113px;  text-align: center; z-index: 99; visibility: hidden; overflow: hidden; position: absolute; top: 100%; left:0;}
-.hideDropdown.show    {display: block; visibility: visible; border: 1px solid #005c13;}
+.hideDropdown      {background: #fff; min-width: 113px;  text-align: center; z-index: 99; display: none; overflow: hidden; position: absolute; top: 100%; left:0; border: 1px solid #005c13;}
 .dropdownItem  {list-style: none; border-bottom: 1px solid #005c13;}
 .dropdownItem:last-child	{border-bottom: 0;}
 .dropdownItem a        {color: #005c13; display: block; position: relative; font-size: 16px; text-decoration: none; padding: 5px 0;}
