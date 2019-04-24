@@ -13,12 +13,12 @@
 .footer		{position: relative; overflow: hidden; max-width: 1080px; height: 50px; margin: 0 auto; font-family: 'Dosis', sans-serif; line-height: 50px; border-top: 2px solid #e2e2eb;}
 
 /* conWrap */
-.conWrap	{max-width: 1080px; margin: 0 auto; min-height: 900px;}
+.conWrap	{max-width: 1080px; margin: 0 auto; min-height: 800px;}
 .hello		{font-family: 'Dosis', sans-serif;}
 .big		{font-size: 120px; color: #005c13; font-weight: bold;}
 .small		{font-size: 64px;}
 
-.pofol		{margin-top: 50px;}
+.pofol		{margin-top: 80px;}
 
 .viewCaption	{ display: inline-block; position:relative; padding:30px 0 30px 570px; width:calc(100% - 570px); }
 
