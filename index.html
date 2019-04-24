@@ -12,7 +12,23 @@
         <title>웹 퍼블리셔 김소정::포트폴리오</title>
     </head>
     <body>
-        <?php include 'include/header.html'; ?>
+ 		<div class="header">
+			<h1>
+				<img src="img/logo.png" alt="로고"/>
+			</h1>
+			<div class="menu">
+				<ul>
+					<li><a href="https://kim-bori.github.io" class="on">HOME</a></li>
+                    <li><a href="https://kim-bori.github.io/about.html">ABOUT ME</a></li>
+				</ul>
+			</div>
+			<script>
+				$('.menu li a').on('click', function(){
+					$(this).addClass('on');
+					$(this).parent().siblings().find('a').removeClass('on');
+				});
+			</script>
+		</div>
 		<div class="conWrap">
 			<div class="hello">
 				<div class="big">Hello</div>
@@ -111,6 +127,8 @@
 					</div>
 				</div>
 			</div>
-		<?php include 'include/footer.html'; ?>
+		<div class="footer">
+			<span>COPYRIGHT ⓒ 2018 by KIM SO JEONG. all rights reserved.</span>
+		</div>
 	</body>
 </html>
