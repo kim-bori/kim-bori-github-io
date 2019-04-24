@@ -8,7 +8,7 @@
         <link href="css/index.css" type="text/css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Dosis|Noto+Sans+KR" rel="stylesheet">
-	<link href="img/favicon.ico" rel="shortcut icon">
+	    <link href="img/favicon.ico" rel="shortcut icon">
         <title>웹 퍼블리셔 김소정::포트폴리오</title>
     </head>
     <body>
@@ -52,9 +52,9 @@
 							slidesToScroll: 1,
 							arrow: true,
 							dots: false,
-							infinite: false,
+							infinite: true,
 							autoplay: true,
-                            				autoplayspeed: 3000
+                            autoplayspeed: 3000
 						});
 					</script>					
 					<div class="caption">
@@ -117,14 +117,6 @@
                             </ul>
                         </div>
                         <script>
-                            /*$('.btDropdown').on('click', function(){
-                                if($(this).children('ul').hasClass('show')){
-                                    $(this).find('ul').removeClass('show');
-                                    $(this).find('.trigger').removeClass('open');                                       
-                                } else{
-                                    $(this).find('ul').addClass('show'); 
-								};
-                            });*/
                             $('.btDropdown').on('mouseover', function(){
                                 $(this).find('ul').slideDown();
                             });
