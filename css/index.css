@@ -38,8 +38,8 @@
 .pjName span {padding-left: 5px;}
 
 .pjSpec		{padding-bottom: 30px;}
-.pjSpec li  {list-style: none; line-height: 32px;}
-.pjSpec li strong   {display: inline-block; min-width: 150px; }
+.pjSpec li  {list-style: none; line-height: 32px; display: inline-block;}
+.pjSpec li strong   {display: inline-block; min-width: 150px; float: left;}
 
 .pjIntro	{padding-bottom: 30px;}
 
