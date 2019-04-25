@@ -12,7 +12,7 @@
         <title>웹 퍼블리셔 김소정::포트폴리오</title>
     </head>
     <body>
- 		<div class="header">
+ 		<div class="header"> 
 			<h1>
 				<img src="img/logo.png" alt="로고"/>
 			</h1>
@@ -22,12 +22,34 @@
                     <li><a href="https://kim-bori.github.io/about.html">ABOUT ME</a></li>
 				</ul>
 			</div>
-			<script>
+            <script>
 				$('.menu li a').on('click', function(){
 					$(this).addClass('on');
-					$(this).parent().siblings().find('a').removeClass('on');
+					(this).parent().siblings().find('a').removeClass('on');
 				});
 			</script>
+            <div class="mobMenuWrap">
+                <a href="#" class="mobMenuBt">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </a>
+                <ul class="mobMenu">
+                    <li><a href="https://kim-bori.github.io">HOME</a></li>
+                    <li><a href="https://kim-bori.github.io/about.html">ABOUT ME</a></li>
+                </ul>
+            </div>
+            <script>
+                $('.mobMenuBt').on('click', function(){
+                    if($(this).hasClass('active')){
+                    $(this).parent().find('ul').slideUp();
+                    $(this).removeClass('active');
+                }else{
+                    $(this).parent().find('ul').slideDown();
+                    $(this).addClass('active');
+                }
+                });
+            </script>
 		</div>
 		<div class="conWrap">
 			<div class="hello">
@@ -56,7 +78,7 @@
 							autoplay: true,
                             autoplayspeed: 3000
 						});
-					</script>					
+					</script>				
 					<div class="caption">
 						<div class="pjName"><p>통일연구원</p><span>랜딩 페이지</span></div>
                         <ul class="pjSpec">
@@ -70,8 +92,12 @@
 							</li>
 							<li>
 								<strong>Skills</strong>
-								<span>html, css, javascript, j-query,<br/>kw3c, kwcag</span>
-							</li>							
+								<span>html, css, , javascript, j-query</span>
+							</li>
+							<li>
+								<strong>W3C&WAI</strong>
+								<span>accessibility</span>
+							</li>
 						</ul>
 						<div class="pjIntro">
 							<p>통일연구원 사이트의 메인 및 서브 페이지 5개를 만들어 보았습니다.</p>
@@ -119,12 +145,12 @@
                              $('.btDropdown').on('mouseleave', function(){
                                 $(this).find('ul').slideUp();
                             });
-                        </script>                          
+                        </script>                         
 					</div>
 				</div>
 			</div>
 		<div class="footer">
-			<span>COPYRIGHT ⓒ 2018 by KIM SO JEONG. all rights reserved.</span>
+			<span>COPYRIGHT ⓒ 2019 by KIM SO JEONG. all rights reserved.</span>
 		</div>
 	</body>
 </html>
