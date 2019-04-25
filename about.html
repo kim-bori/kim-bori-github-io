@@ -13,22 +13,44 @@
         <title>웹 퍼블리셔 김소정::포트폴리오</title>
     </head>
     <body>
- 		<div class="header">
+ 		<div class="header"> 
 			<h1>
 				<img src="img/logo.png" alt="로고"/>
 			</h1>
 			<div class="menu">
 				<ul>
-					<li><a href="https://kim-bori.github.io">HOME</a></li>
-					<li><a href="https://kim-bori.github.io/about.html" class="on">ABOUT ME</a></li>					
+					<li><a href="https://kim-bori.github.io" class="on">HOME</a></li>
+                    <li><a href="https://kim-bori.github.io/about.html">ABOUT ME</a></li>
 				</ul>
 			</div>
-			<script>
+            <script>
 				$('.menu li a').on('click', function(){
 					$(this).addClass('on');
-					$(this).parent().siblings().find('a').removeClass('on');
+					(this).parent().siblings().find('a').removeClass('on');
 				});
 			</script>
+            <div class="mobMenuWrap">
+                <a href="#" class="mobMenuBt">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </a>
+                <ul class="mobMenu">
+                    <li><a href="https://kim-bori.github.io">HOME</a></li>
+                    <li><a href="https://kim-bori.github.io/about.html">ABOUT ME</a></li>
+                </ul>
+            </div>
+            <script>
+                $('.mobMenuBt').on('click', function(){
+                    if($(this).hasClass('active')){
+                    $(this).parent().find('ul').slideUp();
+                    $(this).removeClass('active');
+                }else{
+                    $(this).parent().find('ul').slideDown();
+                    $(this).addClass('active');
+                }
+                });
+            </script>
 		</div>
 		<div class="conWrap">
 			<div class="hello">
@@ -46,8 +68,7 @@
                 <p>
                     <strong>2016.03 ~ 2017.08</strong>
                     <span>온라인 바이럴 마케팅 대행사 햇님달님 근무<br/>
-                    - 기획서 제작 및 견적안 구성<br/>- 바이럴 마케팅 (블로그, 카페, 지식인 등)<br/>- 광고주 커뮤니케이션
-                    </span>
+                    - 기획서 제작 및 견적안 구성<br/>- 바이럴 마케팅 (블로그, 카페, 지식인 등)</span>
                 </p>
                 <p>
                     <strong>2017.10 ~ </strong>
@@ -64,11 +85,12 @@
                 </p>
             </div>
 			<div class="about">
+                <p>Cover Letter</p>
                <span>누군가는 부족하다고 할 수 있지만 나름의 다양한 경험들을 바탕으로 바이럴광고 AE로 3년을 배우며 성장했습니다.<br/>좋은 기회로 참여하게 된 신규 마케팅 플랫폼 런칭 프로젝트에서 기획을 배우며 어깨 너머로 퍼블리싱을 알게 되었습니다.<br/><br/>내가 만드는 대로 화면이 나타나는 퍼블리싱의 매력에 빠지게 되었고, 정식으로 퍼블리싱을 배워보고자 '프론트엔드 개발' 과정을 이수했습니다.<br/>용기만 가지고 배우기 시작한 퍼블리싱은 기대 이상으로 더욱 재미있었고, 제 적성에 맞는 업무라는 생각이 들었습니다.<br/><br/>어깨 너머로 이렇게 습득할 정도면 소질이 있어보이니 배워보라던 개발자님의 응원과 즐겁게 배워나가며 성장속도가 좋아 앞으로가 기대된다는 선생님의 말씀을<br/>원동력 삼아 퍼블리셔, 나아가 프론트엔드 개발자로 평생을 공부하고자 합니다.</span>	
 			</div>
 		</div>
 		<div class="footer">
-			<span>COPYRIGHT ⓒ 2018 by KIM SO JEONG. all rights reserved.</span>
+			<span>COPYRIGHT ⓒ 2019 by KIM SO JEONG. all rights reserved.</span>
 		</div>
 	</body>
 </html>
