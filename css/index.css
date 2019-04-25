@@ -8,7 +8,16 @@
 .menu li a  {text-decoration: none; font-size: 24px; color: #333;}
 .menu li a.on {color: #005c13; font-weight: bold;}
 
+.mobMenuWrap    {display: none;}
+.mobMenu    {display: none; width:100%; height: 100%; position: fixed; background: #f6f6f6; text-align: center; z-index: 999; padding: 50% 0;}
+.mobMenu>li     {padding: 0 20px 20px; border-bottom: 1px dashed #efefef; font-size: 14px; list-style: none;}
+.mobMenu>li>a   {font-family: 'Dosis', sans-serif; padding:10px 0; font-weight: bold; display: block; text-decoration: none; font-size: 36px; color: #005c13;}
 
+.mobMenuBt      {position: absolute; top:10px; right:20px; display: inline-block; z-index: 1000;}
+.mobMenuBt span     {display:block; width:36px; height: 6px; background: #005c13; border-radius: 8px; margin:5px 0; overflow: hidden;}
+.mobMenuBt.active .first   {transform: translateY(9px) translateX(0) rotate(45deg);}
+.mobMenuBt.active .second  {opacity: 0;}
+.mobMenuBt.active .third   {transform: translateY(-13px) translateX(0) rotate(-45deg);}
 /* footer */
 .footer		{position: relative; overflow: hidden; max-width: 1080px; height: 50px; margin: 0 auto; font-family: 'Dosis', sans-serif; line-height: 50px; border-top: 2px solid #e2e2eb;}
 
@@ -38,9 +47,8 @@
 .pjName span {padding-left: 5px;}
 
 .pjSpec		{padding-bottom: 30px;}
-.pjSpec li  {list-style: none; line-height: 32px; display: inline-block;}
-.pjSpec li strong   {display: inline-block; min-width: 150px; float: left;}
-.pjSpec li span	    {float: left;}
+.pjSpec li  {list-style: none; line-height: 32px;}
+.pjSpec li strong   {display: inline-block; min-width: 150px; }
 
 .pjIntro	{padding-bottom: 30px;}
 
@@ -104,11 +112,9 @@
 
 @media (max-width:640px) {
 	.header h1 img 	{max-width: 40px;}
-	.menu	{position: absolute; top: 50px; right: 0; font-family: 'Dosis', sans-serif; float: right;}
-	.menu li {display: inline-block; width: 115px; text-align: center;}
-	.menu li a  {text-decoration: none; font-size: 24px; color: #333;}
-	.menu li a.on {color: #005c13; font-weight: bold;}
-	
+	.menu	 {display: none;}    
+    .mobMenuWrap {display: block;}
+    
 	/* footer */
 	.footer		{height: 20px; line-height: 20px; padding-left: 10px; font-size:12px;}
 
