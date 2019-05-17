@@ -31,7 +31,7 @@
 
 .viewCaption	{ display: inline-block; position:relative; padding:30px 0 30px 570px; width:calc(100% - 570px); }
 
-.viewCaption .slide			{ position:absolute; top:20px; left:0; padding:20px 20px 100px; width:calc(100% - 550px); min-height:500px; background: url(../img/monitor.png) 0 0 no-repeat / 100% auto; }
+.viewCaption .slide			{position:absolute; top:20px; left:0; padding:20px 20px 100px; width:calc(100% - 550px); min-height:500px; background: url(../img/monitor.png) 0 0 no-repeat / 100% auto; }
 .view		{ width:100%; overflow: hidden; position:relative; }
 .view .slick-list	{width: 100%; overflow: hidden; }
 .view .slick-slide	{float: left; }
@@ -64,7 +64,8 @@
 .bt a {color: #fff; text-decoration: none;}
 
 
-
+.MviewCaption	{ display: inline-block; position:relative; padding:30px 570px 30px 0px; width:calc(100% - 570px); }
+.mob    {position:absolute; top:20px; right:0; padding:20px 20px 100px; width:calc(100% - 550px); min-height:500px; background: url(../img/phone.png) 0 0 no-repeat;}
 
 /* @media (max-width:1080px) {
 	.header  {overflow: hidden; width: 100%; height: auto;}
